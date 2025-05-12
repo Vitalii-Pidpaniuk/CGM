@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lab 2 / User interaction</title>
+		<style>
+    		body, html { margin: 0; padding: 0; overflow: hidden; }
+    		canvas { display: block; border: 1px solid black;}
+  		</style>
+	</head>
+
+	<body>
+		<label for="bgColorPicker">Виберіть колір фону:</label>
+		<input type="color" id="bgColorPicker" value="#e6e6e6">
+		<button id="drawPointsBtn">Рисувати точки</button>
+  		<button id="drawTrianglesBtn">Рисувати трикутники</button>
+		<button id="drawCircleBtn">Рисувати коло</button>
+		<button id="clearBtn">Очистити канвас</button>
+  		
+		<label for="colorPicker">Виберіть колір точок:</label>
+  		<input type="color" id="colorPicker" name="colorPicker" value="#ff0000">
+
+		<canvas id = "mycanvas" width = "700" height = "700"></canvas>
+		<script src="https://cdn.jsdelivr.net/npm/gl-matrix@2.8.1/dist/gl-matrix-min.js"></script>
+		<script src="scripts/user_interaction.js"></script>
+	</body>
+</html>
